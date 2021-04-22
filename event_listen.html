@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Array</title>
+
+    
+
+</head>
+
+<body>
+
+    <label for="enter">Enter the numbers:</label>
+    <button type="button" id="myBtn" onclick="myFunction()">Submit</button>
+
+    <p id="arr" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;">
+    </p>
+
+    <p id="demo" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;"></p>
+
+    <script>
+        var abc = document.getElementById("myBtn");
+abc.addEventListener("mouseover", myFunction);
+abc.addEventListener("mouseover", myFunction1);
+abc.addEventListener("click", mySecondFunction);
+abc.addEventListener("mouseout", myThirdFunction);
+
+function myFunction1() {
+  document.getElementById("demo").innerHTML += "<br>";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>";
+}
+
+
+function myFunction(){
+
+    document.getElementById("arr").innerHTML="this is dynamically printed";
+    document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+}
+
+
+       
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>String functions</title>
+
+    
+
+</head>
+
+<body>
+    <label for="enter">To find the Length of the string</label><br>
+    <label for="enter">Enter the string:</label>
+    <input type="text" id="array" name="arr"><br>
+    <button type="button" id="myBtn" onclick="myFunction()">Submit</button>
+
+    <p id="arr" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;"></p><br><br>
+
+    <label for="enter">To find the first occurence of the string</label><br>
+    <label for="enter">Enter the sentence:</label>
+    <input type="text" id="array1" name="arr1"><br>
+    <label for="enter">Enter the word to find:</label>
+    <input type="text" id="array2" name="arr2"><br>
+    <button type="button" id="myBtn1" onclick="myFunction1()">Submit</button>
+
+    <p id="arr1" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;"></p><br><br>
+
+    <label for="enter">To Find the exact position of the String</label><br>
+    <label for="enter">Enter the sentence:</label>
+    <input type="text" id="array3" name="arr3"><br>
+    <label for="enter">Enter the word to find:</label>
+    <input type="text" id="array4" name="arr4"><br>
+    <button type="button" id="myBtn1" onclick="myFunction2()">Submit</button>
+
+    <p id="arr3" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;"></p><br><br>
+
+
+    <label for="enter">enter the string to slice</label><br>
+    <label for="enter">Enter the sentence:</label>
+    <input type="text" id="array5" name="arr5"><br>
+    <label for="enter">Enter the start and end:</label>
+    <input type="text" id="array6" name="arr6"><br>
+    <button type="button" id="myBtn1" onclick="myFunction3()">Submit</button>
+
+    <p id="arr5" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 50px;"></p><br><br>
+
+   <script>
+        var abc = document.getElementById("myBtn");
+        abc.addEventListener("mouseover", myFunction);
+
+function myFunction(){
+        var txt = document.getElementById("array").value;
+        var sln = txt.length;
+
+        document.getElementById("arr").innerHTML="The length of the string is " + sln;
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+}
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+        var abcd = document.getElementById("myBtn1");
+        abcd.addEventListener("mouseover", myFunction1);
+
+function myFunction1(){
+        var str = document.getElementById("array1").value;
+        var pos = str.indexOf(document.getElementById("array2").value);
+
+        document.getElementById("arr1").innerHTML="The word is at Position " +pos;
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+}
+
+document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+var abcde = document.getElementById("myBtn");
+        abcde.addEventListener("mouseover", myFunction);
+
+function myFunction2(){
+        
+    var str = document.getElementById("array3").value;
+var pos1 = str.search(document.getElementById("array4").value);
+
+        document.getElementById("arr3").innerHTML="The string position is " +pos1;
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+}
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+        var abcdef = document.getElementById("myBtn");
+        abcdef.addEventListener("mouseover", myFunction);
+
+function myFunction3(){
+        
+    var str1 = document.getElementById("array5").value;
+var pos2 = str1.slice(2,6);
+
+        document.getElementById("arr5").innerHTML="The sliced string is " +pos2;
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+}
+        document.getElementById("demo").innerHTML += "Moused over!<br>";
+
+
+
+        
+
+
+    </script>
+
+</body>
+
+</html>
