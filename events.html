@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    Enter your name: <input type="text" id="text1" class="txt1" onfocus="myFunction()" >
+    <p id="demo"></p>
+
+
+<button onclick="myFunction()">click here</button>
+
+
+
+<script>
+function myFunction() {
+
+   
+  var x, i;
+  var txt="";
+  x = document.querySelectorAll(".txt1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "yellow";
+
+    txt = document.getElementById("text1");
+
+    document.getElementById("demo").innerHTML = txt;
+    document.get
+  }
+
+
+  
+}
+</script>
+
+</body>
+</html>
