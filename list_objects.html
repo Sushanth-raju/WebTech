@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function sush() {
+    
+     var x = document.getElementById("mySelect");
+     var num = new Number('15.2632');
+     var txt = "";
+    // if(x.length == 0 ){
+    // txt =  num.toExponential();
+    // document.getElementById("demo").innerHTML = txt;
+    // }
+    txt = x.options[0].text + " is " + num.toExponential();
+    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("mySelect").disabled=false;
+    
+
+        
+}
+
+
+function sush1() {
+    
+    var x = document.getElementById("mySelect");
+    var num = new Number('15.2632');
+    var txt = "";
+   // if(x.length == 0 ){
+   // txt =  num.toExponential();
+   // document.getElementById("demo").innerHTML = txt;
+   // }
+   txt = x.options[1].text + " is " + num.toFixed();
+   document.getElementById("demo1").innerHTML = txt;
+   document.getElementById("mySelect").disabled=false;
+}
+
+function sush2() {
+    
+    var x = document.getElementById("mySelect");
+    var num = new Number('15.2632');
+    var txt = "";
+   // if(x.length == 0 ){
+   // txt =  num.toExponential();
+   // document.getElementById("demo").innerHTML = txt;
+   // }
+   txt = x.options[2].text + " is " + num.toPrecision();
+   document.getElementById("demo2").innerHTML = txt;
+   document.getElementById("mySelect").disabled=false;
+}
+
+function sush3() {
+    
+    var x = document.getElementById("mySelect");
+    var num = new Number('15.2632');
+    var txt = "";
+   // if(x.length == 0 ){
+   // txt =  num.toExponential();
+   // document.getElementById("demo").innerHTML = txt;
+   // }
+   txt = x.options[3].text + " is " + num.toString();
+   document.getElementById("demo3").innerHTML = txt;
+   document.getElementById("mySelect").disabled=false;
+}
+
+function sush4() {
+    
+    var x = document.getElementById("mySelect");
+    var num = new Number('15.2632');
+    var txt = "";
+   // if(x.length == 0 ){
+   // txt =  num.toExponential();
+   // document.getElementById("demo").innerHTML = txt;
+   // }
+   txt = x.options[4].text + " is " + num.valueOf();
+   document.getElementById("demo4").innerHTML = txt;
+   document.getElementById("mySelect").disabled=true;
+}
+
+
+
+</script>
+</head>
+<body>
+
+<form>
+Select your option:
+<select id="mySelect">
+  <option>To Exponential</option>
+  <option>To Fixed</option>
+  <option>To Precision</option>
+  <option>To String</option>
+  <option>To ValueOf</option>
+</select>
+<br><br>
+<input type="lable" value="15.2632">
+<input type="button" onclick="sush()" value="Submit">
+<input type="button" onclick="sush1()" value="Submit">
+<input type="button" onclick="sush2()" value="Submit">
+<input type="button" onclick="sush3()" value="Submit">
+<input type="button" onclick="sush4()" value="Submit">
+</form>
+
+<p id="demo"></p><br>
+<p id="demo1"></p><br>
+<p id="demo2"></p><br>
+<p id="demo3"></p><br>
+<p id="demo4"></p><br>
+
+</body>
+</html>
+
+
