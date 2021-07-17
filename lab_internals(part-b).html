@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Lab Internal</title>
+</head>
+
+<body>
+
+    <label for="enter">Enter the numbers:</label>
+    <input  id="op">
+    <button type="button" id="myBtn" onclick="myFunction()">Submit</button>
+
+    <p id="arr" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 75px;" >
+    </p>
+
+    <p id="demo" style="color: brown; text-align: center; text-shadow: darkblue; font-size: 75px;"></p>
+
+    <script>
+
+        var array = [];
+        var array1 = [];
+        
+ var abc = document.getElementById("myBtn");
+abc.addEventListener("mouseover", myFunction);
+abc.addEventListener("mouseover", myFunction1);
+
+function myFunction(){
+
+    var value = document.getElementById("op").value;
+    var value1 = document.getElementById("op").value;
+
+ array.push(value1);
+    document.getElementById("demo").innerHTML = array;
+    array.pop(value1);
+   }
+
+   function myFunction1(){
+
+var value = document.getElementById("op").value;
+array1.push(value);
+document.getElementById("arr").innerHTML = array1;
+
+}
+
+ </script>
+</body>
+
+</html>
